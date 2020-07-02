@@ -9,3 +9,4 @@ C:\Users\Stanley\Documents\githubb_poo\POOF_00016716\APPPOOF\APPPOOF\obj\Debug\A
 C:\Users\Stanley\Documents\githubb_poo\POOF_00016716\APPPOOF\APPPOOF\obj\Debug\APPPOOF.exe
 C:\Users\Stanley\Documents\githubb_poo\POOF_00016716\APPPOOF\APPPOOF\obj\Debug\APPPOOF.pdb
 C:\Users\Stanley\Documents\githubb_poo\POOF_00016716\APPPOOF\APPPOOF\obj\Debug\APPPOOF.Form1.resources
+C:\Users\Stanley\Documents\githubb_poo\POOF_00016716\APPPOOF\APPPOOF\obj\Debug\APPPOOF.WindowEmploye.resources

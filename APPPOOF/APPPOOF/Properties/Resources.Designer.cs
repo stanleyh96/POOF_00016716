@@ -63,6 +63,16 @@ namespace APPPOOF.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap covid {
+            get {
+                object obj = ResourceManager.GetObject("covid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap covid_fondo {
             get {
                 object obj = ResourceManager.GetObject("covid_fondo", resourceCulture);
@@ -96,6 +106,26 @@ namespace APPPOOF.Properties {
         internal static System.Drawing.Bitmap covid4 {
             get {
                 object obj = ResourceManager.GetObject("covid4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tapa {
+            get {
+                object obj = ResourceManager.GetObject("tapa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tapaboca {
+            get {
+                object obj = ResourceManager.GetObject("tapaboca", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
