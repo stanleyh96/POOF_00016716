@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace APPPOOF
 {
-    public partial class Login : Form
+    public partial class Form1 : Form
     {
-        public Login()
+        public Form1()
         {
             InitializeComponent();
         }
-
-       
     }
 }

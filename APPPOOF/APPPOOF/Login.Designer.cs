@@ -55,11 +55,12 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(140, 230);
+            this.label1.Location = new System.Drawing.Point(158, 230);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 24);
+            this.label1.Size = new System.Drawing.Size(110, 24);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Usuario:";
+            this.label1.Text = "ID usuario:";
+            
             // 
             // textBoxpassword
             // 
