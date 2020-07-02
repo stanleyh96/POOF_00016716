@@ -1,0 +1,11 @@
+C:\Users\Stanley\Documents\githubb_poo\POOF_00016716\APPPOOF\APPPOOF\bin\Debug\APPPOOF.exe.config
+C:\Users\Stanley\Documents\githubb_poo\POOF_00016716\APPPOOF\APPPOOF\bin\Debug\APPPOOF.exe
+C:\Users\Stanley\Documents\githubb_poo\POOF_00016716\APPPOOF\APPPOOF\bin\Debug\APPPOOF.pdb
+C:\Users\Stanley\Documents\githubb_poo\POOF_00016716\APPPOOF\APPPOOF\obj\Debug\APPPOOF.csprojAssemblyReference.cache
+C:\Users\Stanley\Documents\githubb_poo\POOF_00016716\APPPOOF\APPPOOF\obj\Debug\APPPOOF.Login.resources
+C:\Users\Stanley\Documents\githubb_poo\POOF_00016716\APPPOOF\APPPOOF\obj\Debug\APPPOOF.Properties.Resources.resources
+C:\Users\Stanley\Documents\githubb_poo\POOF_00016716\APPPOOF\APPPOOF\obj\Debug\APPPOOF.csproj.GenerateResource.cache
+C:\Users\Stanley\Documents\githubb_poo\POOF_00016716\APPPOOF\APPPOOF\obj\Debug\APPPOOF.csproj.CoreCompileInputs.cache
+C:\Users\Stanley\Documents\githubb_poo\POOF_00016716\APPPOOF\APPPOOF\obj\Debug\APPPOOF.exe
+C:\Users\Stanley\Documents\githubb_poo\POOF_00016716\APPPOOF\APPPOOF\obj\Debug\APPPOOF.pdb
+C:\Users\Stanley\Documents\githubb_poo\POOF_00016716\APPPOOF\APPPOOF\obj\Debug\APPPOOF.Form1.resources
