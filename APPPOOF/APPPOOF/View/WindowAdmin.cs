@@ -10,12 +10,14 @@ using System.Windows.Forms;
 
 namespace APPPOOF
 {
-    public partial class Form1 : Form
+    public partial class WindowAdmin : Form
     {
-        public Form1()
+        public WindowAdmin()
         {
             InitializeComponent();
         }
+
+       
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {

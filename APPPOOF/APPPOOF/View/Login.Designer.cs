@@ -55,7 +55,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(130, 228);
+            this.label1.Location = new System.Drawing.Point(117, 228);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 24);
             this.label1.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             // textBoxpassword
             // 
-            this.textBoxpassword.Location = new System.Drawing.Point(246, 284);
+            this.textBoxpassword.Location = new System.Drawing.Point(246, 299);
             this.textBoxpassword.Name = "textBoxpassword";
             this.textBoxpassword.Size = new System.Drawing.Size(184, 22);
             this.textBoxpassword.TabIndex = 2;
@@ -82,13 +82,14 @@
             this.buttonstart.BackColor = System.Drawing.Color.Gray;
             this.buttonstart.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonstart.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonstart.Location = new System.Drawing.Point(261, 341);
+            this.buttonstart.Location = new System.Drawing.Point(246, 363);
             this.buttonstart.Name = "buttonstart";
             this.buttonstart.Size = new System.Drawing.Size(154, 42);
             this.buttonstart.TabIndex = 4;
             this.buttonstart.TabStop = false;
             this.buttonstart.Text = "Iniciar sesion";
             this.buttonstart.UseVisualStyleBackColor = false;
+            this.buttonstart.Click += new System.EventHandler(this.buttonstart_Click);
             // 
             // label2
             // 
@@ -96,7 +97,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(102, 282);
+            this.label2.Location = new System.Drawing.Point(105, 297);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 24);
             this.label2.TabIndex = 5;
@@ -119,6 +120,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

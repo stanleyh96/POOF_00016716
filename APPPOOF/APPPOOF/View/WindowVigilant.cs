@@ -1,20 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using APPPOOF.Controller;
+using APPPOOF.Model;
+using System;
+
 using System.Windows.Forms;
 
 namespace APPPOOF
 {
-    public partial class Form2 : Form
+    public partial class WindowVigilant : Form
     {
-        public Form2()
+        public WindowVigilant()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+               
+                Register r = (Register)comboBoxentrada.SelectedItem;
+                int idU =Convert.ToInt32(textBoxcarnet.Text);
+                int temperatura = Convert.ToInt32(textBoxtemperatura.ToString());
+                
+                RegisterDAO.addRegister(DateTime.Now, idU,r.entrada,temperatura);
+
+                MessageBox.Show(" agregado exitosamente", "",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Actualizar el data grid view (la tabla)
+                //actualizarControlesUsuario();
+
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("Error: " + exception.Message, "",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
         }
     }
 }

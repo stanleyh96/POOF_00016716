@@ -1,4 +1,5 @@
-﻿using System;
+﻿using APPPOOF.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace APPPOOF
 {
     public partial class WindowEmploye : Form
     {
-        public WindowEmploye()
+        
+        public WindowEmploye( )
         {
             InitializeComponent();
+            
         }
+              
     }
 }
