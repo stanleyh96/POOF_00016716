@@ -1,0 +1,56 @@
+create table DEPARTAMENTO(
+	idDEPARTAMENTO serial primary key not null,
+	Nombre VARCHAR(100) UNIQUE NOT NULL,
+	Ubicacion VARCHAR(200) NOT NULL
+);
+drop table departamento
+select * from departamento
+
+CREATE TABLE USUARIO(
+	idUsuario int PRIMARY KEY,
+	idDepartamento int not null,
+	contraseña varchar(10) not null,
+	nombre varchar(100) not null,
+	apellido varchar(100) not null,
+	dui int not null,
+	fecha_nacimineto date not null,
+	CONSTRAINT fk_usuario_departamento
+	FOREIGN KEY (idDepartamento) REFERENCES DEPARTAMENTO(idDepartamento)
+	ON DELETE CASCADE ON UPDATE CASCADE
+	
+);
+select * from usuario
+
+drop table usuario
+
+CREATE TABLE REGISTRO(
+	idRegistro serial primary key not null,
+	idUsuario INT NOT NULL,
+	entrada bool not null,
+	fecha_hora timestamp,
+	temperatura float not null,
+	CONSTRAINT fk_registro_usuario
+	FOREIGN KEY (idUsuario) REFERENCES USUARIO(idUsuario)
+	ON DELETE CASCADE ON UPDATE CASCADE
+);
+drop table registro
+-------------------------------------------
+INSERT INTO DEPARTAMENTO( Nombre,Ubicacion ) 
+VALUES('Negocios','Edificio A');
+
+INSERT INTO DEPARTAMENTO( Nombre,Ubicacion ) 
+VALUES('Informatica','Edificio B');
+
+INSERT INTO DEPARTAMENTO( Nombre,Ubicacion ) 
+VALUES('Seguridad','Porton principal');
+----------------------------------------------
+INSERT INTO usuario(idUsuario ,idDepartamento,contraseña,nombre,apellido,dui,fecha_nacimineto ) 
+VALUES(00016716,1,'123','stanley','hurtado',229,'16/09/1996');
+
+INSERT INTO usuario(idUsuario ,idDepartamento,contraseña,nombre,apellido,dui,fecha_nacimineto ) 
+VALUES(00016718,2,'123','jose','hurtado',229,'16/09/1996');
+
+INSERT INTO usuario(idUsuario ,idDepartamento,contraseña,nombre,apellido,dui,fecha_nacimineto ) 
+VALUES(00016719,3,'123','walter','hurtado',229,'16/09/1996');
+
+-------------------------------------------------------
