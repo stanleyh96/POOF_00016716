@@ -17,12 +17,10 @@ namespace APPPOOF
         {
             try
             {
-               
-                Register r = (Register)comboBoxentrada.SelectedItem;
-                int idU =Convert.ToInt32(textBoxcarnet.Text);
-                int temperatura = Convert.ToInt32(textBoxtemperatura.ToString());
-                
-                RegisterDAO.addRegister(DateTime.Now, idU,r.entrada,temperatura);
+
+
+                RegisterDAO.addRegister(DateTime.Now,Convert.ToInt32(textBoxcarnet.Text) , 
+                    Convert.ToBoolean(comboBoxentrada.Text),Convert.ToInt32(textBoxtemperatura.Text));
 
                 MessageBox.Show(" agregado exitosamente", "",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);

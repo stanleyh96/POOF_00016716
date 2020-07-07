@@ -30,12 +30,12 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.textBoxuser = new System.Windows.Forms.TextBox();
+            this.buttonhistorial = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -53,7 +53,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Himalaya", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Himalaya", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(198, 12);
             this.label1.Name = "label1";
@@ -61,26 +61,27 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Historial(Entrada y salida):";
             // 
-            // textBox1
+            // textBoxuser
             // 
-            this.textBox1.Location = new System.Drawing.Point(267, 62);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(172, 22);
-            this.textBox1.TabIndex = 3;
+            this.textBoxuser.Location = new System.Drawing.Point(267, 62);
+            this.textBoxuser.Name = "textBoxuser";
+            this.textBoxuser.Size = new System.Drawing.Size(172, 22);
+            this.textBoxuser.TabIndex = 3;
             // 
-            // button1
+            // buttonhistorial
             // 
-            this.button1.Location = new System.Drawing.Point(465, 58);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 31);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Ver";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonhistorial.Location = new System.Drawing.Point(465, 58);
+            this.buttonhistorial.Name = "buttonhistorial";
+            this.buttonhistorial.Size = new System.Drawing.Size(118, 31);
+            this.buttonhistorial.TabIndex = 4;
+            this.buttonhistorial.Text = "Ver";
+            this.buttonhistorial.UseVisualStyleBackColor = true;
+            this.buttonhistorial.Click += new System.EventHandler(this.buttonhistorial_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(139, 58);
             this.label2.Name = "label2";
@@ -90,7 +91,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::APPPOOF.Properties.Resources.tapa;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(606, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -106,27 +106,26 @@
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(805, 498);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.buttonhistorial);
+            this.Controls.Add(this.textBoxuser);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "WindowEmploye";
             this.Text = "Historial";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
-        #endregion
-
+        private System.Windows.Forms.Button buttonhistorial;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBoxuser;
+
+        #endregion
     }
 }

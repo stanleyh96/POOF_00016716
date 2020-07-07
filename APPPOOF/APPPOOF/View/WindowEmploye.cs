@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using APPPOOF.Controller;
 
 namespace APPPOOF
 {
@@ -19,6 +20,28 @@ namespace APPPOOF
             InitializeComponent();
             
         }
-              
+
+        private void buttonhistorial_Click(object sender, EventArgs e)
+        {
+            if (textBoxuser.Text.Equals(""))
+            {
+                MessageBox.Show("No se puede dejar datos vacios");
+            }else
+            {
+                try
+                {
+                    int ID = Convert.ToInt32(textBoxuser.Text);
+                    var dt =
+                        ConnectionDB.query("select *  from registro r  "+
+                                                  $"\n where r.idusuario= {ID} "); 
+                    dataGridView1.DataSource = dt;
+                    MessageBox.Show("Datos obtenidos exitosamente");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ha ocurrido un problema");
+                }
+            }
+        }
     }
 }
